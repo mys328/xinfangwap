@@ -1,0 +1,30 @@
+#toast {
+    position: fixed;
+    margin-top: 70%;
+    left: 40%;
+    width: auto;
+    height: auto;
+    font-size: smaller;
+    background-color: #363636;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+    text-align: center;
+    opacity: .9;
+    border-radius: 5px;
+    -webkit-transition: opacity 0.5s ease-out;
+    -moz-transition: opacity 0.5s ease-out;
+    -ms-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+<!--
+    /*The good stuff */
+-webkit-transition : opacity 0.5 s ease-out; /* Saf3.2+, Chrome */
+    -moz-transition: opacity 0.5s ease-out; /* FF4+ */
+    -ms-transition: opacity 0.5s ease-out; /* IE10? */
+    -o-transition: opacity 0.5s ease-out; /* Opera 10.5+ */
+    transition: opacity 0.5s ease-out;
+}

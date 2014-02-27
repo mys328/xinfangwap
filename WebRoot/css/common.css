@@ -1,0 +1,217 @@
+a {
+    text-decoration: none;
+}
+
+div {
+    margin-bottom: 6px;
+
+}
+
+
+#welcome_bar {
+    background-color: #178bbc;
+    padding-bottom: 4px;
+    padding-left: 10%;
+    padding-top: 4px;
+    text-align: left;
+    font-size: 16pt;
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #fefefe;
+    width: 100%;
+
+}
+
+.indexlayout {
+    position: relative;
+
+}
+
+.menu {
+    float: left;
+    margin: 2%;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 18pt;
+    height: 90px;
+    width: 40%;
+    color: #fdfcfc;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+#menu1 {
+    background-color: #614689;
+}
+
+#menu2 {
+    background-color: #00889e;
+}
+
+#menu3 {
+    background-color: #d34a28;
+}
+
+#menu4 {
+    background-color: #2d89ee;
+}
+
+#menu5 {
+    background-color: #bb1e49;
+}
+
+.inquirylist {
+    width: 100%;
+    border-spacing: separate;
+    margin-bottom: 40px;
+}
+
+.inquirylist tr th {
+    background-color: #9ea9ca;
+    text-align: center;
+    height: 36px;
+
+}
+
+.inquirylist tr td {
+    line-height: 36px;
+    font-size: 10pt;
+    text-align: center;
+    color: #000;
+
+}
+
+.titles {
+    width: 45%;
+}
+
+.date {
+    width: 20%;
+}
+
+.status {
+    width: 35%;
+}
+
+.page {
+
+   text-align: center;
+
+}
+.form_div{
+    position: relative;
+}
+@media screen and (max-width: 768px) {
+    .key {
+        float: left;
+        width: 25%;
+        color: #222222;
+        border: 0px solid #000;
+        min-height: 50px;
+        height: auto;
+        margin-bottom: 8px;
+        margin-left: 5%;
+
+    }
+    .value {
+        float: left;
+        width: 70%;
+        border: 0px solid #000;
+        min-height: 50px;
+        height: auto;
+        margin-bottom: 8px;
+
+    }
+}
+@media screen and (min-width: 768px) {
+    .key {
+        float: left;
+        width: 20%;
+        color: #222222;
+
+        margin-left: 10%;
+        min-height: 50px;
+        height: auto;
+        margin-bottom: 8px;
+        padding-left: 8%;
+    }
+    .value {
+        float: left;
+        width: 60%;
+        border: 0px solid #000;
+        min-height: 50px;
+        height: auto;
+        margin-bottom: 8px;
+        padding-right: 10%;
+        margin-right: 10%;
+        padding-left: 8%;
+
+    }
+}
+
+.key1{
+    width: 100%;
+    height: 30px;
+}
+.span_div{
+
+    color: red;
+    margin-left: 10px;
+
+}
+
+.buttons {
+    padding-left: 0px;
+    margin-left: 40%;
+
+}
+
+.resulttable {
+    width: 95%;
+    MARGIN-RIGHT: auto;
+    MARGIN-LEFT: auto;
+
+
+}
+
+.num1 {
+    width: 30%;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.num2 {
+    width: 70%;
+
+}
+#tijiao{
+    position: relative;
+    border: 0px solid #000;
+    height: 50px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.actionmessage {
+    color: #f9ac07;
+    font-size: smaller;
+}
+table tr th {
+    font-weight: bold;
+}
+.ms {
+    MARGIN-RIGHT: auto;
+    MARGIN-LEFT: auto;
+    color: #ed0e37;
+    width: 300px;
+    height: 30px;
+}
+
+#message ul {
+    list-style-type: none;
+}
+.tips{
+    color: #ed0e37;
+}

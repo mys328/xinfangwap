@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	
+	 <constant name="struts.devMode" value="false" />
+	 <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	 
+	 <package name="default" namespace="/" extends="struts-default">
+		<global-results>
+			<result name="allException">/WEB-INF/page/error.jsp</result>
+			<result name="nullPoint">/WEB-INF/page/error.jsp</result>
+            <result name="jasperException">/WEB-INF/page/error.jsp</result>
+            <result name="iOException">/WEB-INF/page/error.jsp</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping result="allException" exception="java.lang.IllegalArgumentException">
+			</exception-mapping>
+			<exception-mapping result="nullPoint" exception="java.lang.NullPointerException">
+			</exception-mapping>
+            <exception-mapping result="jasperException" exception="org.apache.jasper.JasperException">
+            </exception-mapping>
+            <exception-mapping result="iOException" exception="java.io.IOException">
+            </exception-mapping>
+
+		</global-exception-mappings>
+
+		 <action name="*_*" class="com.bwzy.company.action.{1}Action" method="{2}">
+			
+			<result name="login_success">/editletter.jsp</result>
+             <result name="login_failure_pad">/ipadlogin.jsp</result>
+             <result name="login_failure_mobile">/mobilelogin.jsp</result>
+			<result name="login_failure_pc">/desktop_login.jsp</result>
+			<result name="timeout">/entrance_select.jsp</result>
+			<result name="getuserinfo">/elteruserinfo.jsp</result>
+			<result name="eltersuccess">/editletter.jsp</result>
+			<result name="elterfail">/elteruserinfo.jsp</result>
+			<result name="updatePasswordSuccess">/editletter.jsp</result>
+			<result name="updatePasswordFail">/elterpassword.jsp</result>
+			<result name="logout">/entrance_select.jsp</result>
+			<result name="uploadFileSuccess">/editletter.jsp</result>
+			<result name="commitLetterSuccess">/inquiry.jsp</result>
+			<result name="commitLetterFail">/editletter.jsp</result>
+			<result name="getLetterList">/inquiry.jsp</result>
+			<result name="lettercontent">/lettercontent.jsp</result>
+			<result name="biz_result">/processresult.jsp</result>
+			<result name="noTheUser">/forgetpassword1.jsp</result>
+			<result name="hasTheUser">/forgetpassword2.jsp</result>
+			<result name="AnswerError">/forgetpassword2.jsp</result>
+			<result name="AnswerRight">/forgetpassword3.jsp</result>
+			<result name="NewPassWord">/forgetpassword4.jsp</result>
+			<result name="CommitCreCodeFail">/forgetpassword3.jsp</result>
+			<result name="ElterNewPasswordSUCC">/desktop_login.jsp</result>
+			<result name="ElterNewPasswordFAIL">/forgetpassword4.jsp</result>
+			<result name="registerSUCC">/desktop_login.jsp</result>
+			<result name="registerFail">/register.jsp</result>
+            <result name="commitMYCDSuccess">/editletter.jsp</result>
+            <result name="commitMYCDFail">/processresult.jsp</result>
+             <result name="readtimeout">/editletter.jsp</result>
+             <result name="editletter">/editletter.jsp</result>
+             <result name="password">/elterpassword.jsp</result>
+
+		 </action>
+
+	 </package>
+    
+</struts>

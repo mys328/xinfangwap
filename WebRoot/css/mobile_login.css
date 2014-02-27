@@ -1,0 +1,107 @@
+body {
+    text-align: center;
+    background-image: url("../images/login_bg.png");
+    background-repeat: repeat-x;
+}
+
+.logo {
+    width: 300px;
+    height: 70px;
+    border: 0px solid #b5b5b5;
+    MARGIN-RIGHT: auto;
+    MARGIN-LEFT: auto;
+    margin-top: 30px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.mod-login .iptBox {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    border: 1px solid #b5b5b5;
+    border-radius: 5px;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 3px #A6C1D2;
+    -moz-box-shadow: 0 2px 3px #A6C1D2;
+    -ms-box-shadow: 0 2px 3px #A6C1D2;
+    position: relative;
+    width: 300px;
+    MARGIN-RIGHT: auto;
+    MARGIN-LEFT: auto;
+}
+
+.mod-login .iptBox .item {
+    border-bottom: 1px solid #e2e2e2;
+    padding: 10px 10px;
+    height: 50px;
+
+}
+
+.mod-login .iptBox .item:last-child {
+    border: 0;
+}
+
+.mod-login .iptBox .item div {
+    float: left;
+    border: 0px solid #000;
+}
+
+.mod-login .iptBox .item .left_div {
+    width: 30%;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.mod-login .iptBox .item .right_div {
+    width: 70%;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.mod-login .iptBox .item .right_div input {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    line-height: 24px;
+    padding-left: 3px;
+}
+
+.submit {
+    margin-top: 20px;
+}
+
+.reg {
+    margin-top: 20px;
+}
+
+.loginBtn {
+    background-color: #357ebd;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    border: 0px solid #b5b5b5;
+    border-radius: 5px;
+    width: 80px;
+    height: 35px;
+}
+
+.mod-footer {
+    margin-top: 20px;
+}
+
+.ms {
+    MARGIN-RIGHT: auto;
+    MARGIN-LEFT: auto;
+    color: #ed0e37;
+    width: 300px;
+    height: 30px;
+}
+
+#message ul {
+    list-style-type: none;
+}

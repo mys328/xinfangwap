@@ -1,0 +1,1291 @@
+/* css reset */
+body {
+    color: #000;
+    background: #fff;
+    font-size: 12px;
+    line-height: 166.6%;
+    text-align: center;
+
+}
+
+body, input, select, button {
+    font-family: verdana
+}
+
+h1, h2, h3, select, input, button {
+    font-size: 100%
+}
+
+body, h1, h2, h3, ul, li, form, p, img {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+input, button, select, img {
+    margin: 0;
+    line-height: normal
+}
+
+select {
+    padding: 1px
+}
+
+ul {
+    list-style: none
+}
+
+select, input, button, button img, label {
+    vertical-align: middle
+}
+
+header, footer, section, aside, nav, hgroup, figure, figcaption {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none
+}
+
+a {
+    text-decoration: none;
+    color: #959595
+}
+
+a:hover {
+    color: #626262
+}
+
+.fontWeight {
+    font-weight: 700;
+}
+
+/* global */
+.unvisi {
+    visibility: hidden
+}
+
+/* backgroundImage */
+.themeCtrl a,
+.loginFormIpt,
+.headerIntro,
+.loginIcoCurrent,
+.loginIcoNew,
+.themeText li,
+.domain,
+.whatAutologin,
+.btn,
+.dialogbox .hd .rc,
+.dialogbox .hd,
+.btn-moblogin,
+.btn-moblogin2,
+.ico,
+.locationTestTitle,
+.verSelected,
+.servSelected,
+.locationTestTitleClose,
+.ext-4free,
+#extText li,
+#extMobLogin li,
+#mobtips_arr,
+#mobtips_close {
+    background-image: url("../images/bg.png")
+}
+
+.headerLogo,
+.headerIntro,
+.headerNav,
+#headerEff,
+.footerLogo,
+.footerNav,
+.loginIcoCurrent,
+.loginIcoNew,
+.loginFormTh,
+.loginFormTdIpt,
+.domain,
+#loginFormSelect,
+#whatAutologinTip,
+#mobtips,
+#mobtips_arr,
+#mobtips_close {
+    position: absolute
+}
+
+/* ico */
+.ico-uid {
+    width: 14px;
+    height: 16px;
+    background-position: -169px -64px
+}
+
+.ico-pwd {
+    width: 14px;
+    height: 16px;
+    background-position: -193px -64px
+}
+
+.ico-arr {
+    display: inline-block;
+    width: 7px;
+    height: 12px;
+    vertical-align: baseline;
+    background-position: -160px -112px;
+}
+
+.ico-arr-d {
+    background-position: -160px -110px;
+}
+
+.loginFormConf a:hover .ico-arr-d,
+.ico-arr-d-focus {
+    background-position: -176px -110px;
+}
+
+*+html .ico-arr-d {
+    background-position: -160px -112px;
+}
+
+*+html .loginFormConf a:hover .ico-arr-d,
+*+html .loginFormConf a:hover .ico-arr-d,
+*+html .ico-arr-d-focus {
+    background-position: -176px -112px;
+}
+
+/* header */
+.header {
+    width: 1000px;
+    height: 64px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.headerLogo {
+    top: 17px;
+    left: 50px
+}
+
+.headerIntro {
+    height: 28px;
+    width: 160px;
+    display: block;
+    background-position: 0 -64px;
+    top: 17px;
+    left: 194px
+}
+
+.headerNav {
+    top: 21px;
+    right: 50px;
+    width: 400px;
+    text-align: right;
+    color: #cfd0d0;
+}
+
+.headerNav a {
+    margin-left: 13px
+}
+
+.headerNav .last {
+    margin-left: 0;
+}
+
+#headerEff {
+}
+
+/* main */
+.main {
+    height: 500px;
+    background: #9ea9ca;
+    position: relative;
+    min-width: 1000px;
+    background-image: url("../images/desktop_login_bg.jpg")
+}
+
+.main-inner {
+    width: 1000px;
+    height: 600px;
+    overflow: visible;
+    margin: 0 auto;
+    position: relative;
+    clear: both
+}
+
+#theme {
+    height: 600px;
+    width: 1000px;
+    position: absolute;
+    overflow: hidden; /*z-index:1;*/
+    background-position: top right;
+    background-repeat: no-repeat;
+    text-align: left;
+    top: 0;
+    left: 0;
+}
+
+.themeLink {
+    height: 274px;
+    width: 430px;
+    display: block;
+    outline: 0;
+}
+
+.themeText {
+    margin-left: 26px;
+}
+
+.themeText li {
+    line-height: 22px;
+    -line-height: 24px;
+    height: 24px;
+    color: #858686;
+    text-indent: 12px;
+    background-position: -756px -72px;
+    background-repeat: no-repeat
+}
+
+.themeText li a {
+    color: #005590;
+    text-decoration: underline;
+}
+
+.login {
+    width: 295px;
+    height: 392px;
+    padding: 13px 14px 15px;
+    top: 65px;
+    left: 50%;
+    margin-left: 91px;
+    text-align: left;
+    position: absolute;
+    z-index: 2;
+    background: url("../images/login_box.png") no-repeat;
+}
+
+.unishadow {
+    box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.loginFunc {
+    width: 100%;
+    height: 47px;
+    overflow: hidden;
+    clear: both;
+}
+
+.loginFuncNormal, .loginFuncMobile {
+    width: 147px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    line-height: 46px;
+    float: left;
+    font-size: 14px;
+    text-align: center;
++ line-height : 48 px;
+    color: #626262;
+    cursor: pointer;
+}
+
+.loginFuncMobile {
+    width: 147px;
+    border-right: none;
+}
+
+.loginIcoCurrent {
+    width: 24px;
+    height: 24px;
+    left: 26px;
+    top: 9px;
+    display: none;
+}
+
+.loginIcoNew {
+    width: 21px;
+    height: 10px;
+    font-size: 0;
+    background-position: -684px 0;
+    left: 135px;
+    top: 12px;
+}
+
+.tab-2 {
+    background-position: -323px 0;
+}
+
+.tab-2 .loginFuncMobile .loginIcoCurrent,
+.tab-1 .loginFuncNormal .loginIcoCurrent,
+.tab-2 #extMobLogin,
+.tab-1 #extText,
+.tab-11 #extVerSelect,
+.tab-22 #extMobLogin2,
+.tab-2 #lfBtnReg2,
+.tab-1 #lfBtnReg1,
+.tab-2 .loginFormThMob {
+    display: block;
+}
+
+.tab-2 #lfVerSelect,
+.tab-2 #extVerSelect,
+.tab-22 #extMobLogin,
+.tab-11 #extText,
+.tab-2 #extText,
+.tab-2 #lfBtnReg,
+.tab-1 #lfBtnReg2,
+.tab-22 #lfBtnMoblogin,
+.tab-2 .loginFormThAcc {
+    display: none;
+}
+
+/* form */
+.loginForm {
+    position: relative;
+    height: 313px;
+
+}
+
+.loginFormIpt {
+    position: relative;
+    width: 240px;
+    height: 42px;
+    line-height: 42px;
+    margin: 0 0 20px 25px;
+    padding-right: 5px;
+    clear: both;
+    border-radius: 4px;
+    background-position: 0 -352px;
+}
+
+.codecheck {
+    float: left;
+    position: relative;
+    width: 100px;
+    height: 42px;
+    line-height: 42px;
+    margin: 0 0 20px 25px;
+    padding-right: 5px;
+    clear: both;
+    border-radius: 4px;
+    border-right: 1px solid #929b96;
+    background-position: 0 -352px;
+    background-image: url("../images/bg.png")
+}
+
+.ddd img {
+    float: left;
+    border: 0px solid #000;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.loginFormIpt .ico {
+    position: absolute;
+    left: 9px;
+    top: 13px;
+    z-index: 1;
+}
+
+.loginFormIpt-over {
+}
+
+.loginFormIpt-focus {
+    box-shadow: 0 0 5px rgba(40, 195, 15, .5);
+}
+
+.loginFormIpt-focus .placeholder {
+    color: #C9C9C9;
+}
+
+.loginFormBtn {
+    position: relative;
+    width: 245px;
+    height: 43px;
+    margin: 18px 0 0 25px
+}
+
+.loginFormTh {
+    width: 36px;
+}
+
+.loginFormThMob {
+    display: none;
+}
+
+.loginFormTdIpt {
+    width: 205px;
+    padding: 9px 0 10px;
+    ime-mode: disabled;
+    height: 21px;
+    top: 1px;
+    left: 28px;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    font-family: verdana;
+    line-height: 21px;
+    color: #92a4bf;
+    background: transparent !important;
+}
+
+.ddd {
+    width: 240px;
+    height: 50px;
+    position: relative;
+    border: 0px solid #000;
+}
+
+.code_input {
+    float: left;
+    width: 100px;
+    padding: 9px 0 10px;
+    padding-left: 10px;
+    ime-mode: disabled;
+    height: 21px;
+    top: 1px;
+    left: 28px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 0px solid #000;
+    font-family: verdana;
+    line-height: 21px;
+    color: #92a4bf;
+    background: transparent !important;
+}
+
+.loginFormTdIpt:focus {
+    outline: 0;
+}
+
+.code_input:focus {
+    outline: 0;
+}
+
+.loginFormTdIpt-focus {
+    color: #333;
+    font-weight: 700;
+}
+
+.code_input-focus {
+    color: #333;
+    font-weight: 700;
+}
+
+input:-moz-placeholder {
+    color: #C9C9C9;;
+    font-size: 12px;
+    background: none;
+}
+
+input::-webkit-input-placeholder {
+    color: #C9C9C9;;
+    font-size: 12px;
+
+    background: none;
+}
+
+.domain {
+    width: 80px;
+    height: 33px;
+    background-position: 0 -112px;
+    line-height: 999em;
+    overflow: hidden;
+    display: block;
+    right: 8px;
+    top: 4px;
+}
+
+#idInputTest {
+    visibility: hidden;
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.loginFormCheck {
+    height: 13px;
+    line-height: 13px;
+    color: #555;
+    margin: 15px 0 0 25px;
+    clear: both;
+    width: 245px;
+    position: relative;
+    z-index: 1;
+}
+
+.loginFormCheckInner {
+    height: 14px;
+    width: 150px;
+    float: left;
+}
+
+.forgetPwdLine {
+    text-align: right
+}
+
+#remAutoLogin {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+}
+
+.ico-checkbox {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-position: -40px -160px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.autoLogin-checked .ico-checkbox {
+    background-position: -40px -180px;
+}
+
+#remAutoLoginTxt,
+.forgetPwd {
+    color: #848585;
+}
+
+#remAutoLoginTxt:hover,
+.forgetPwd:hover {
+    color: #626262;
+}
+
+#loginFormSelect {
+    width: 182px;
+    left: 46px;
+    top: 6px;
+}
+
+.loginFormCbx {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+}
+
+.loginFormSslText {
+    font-family: simsun
+}
+
+.whatAutologin {
+    display: inline-block;
+    vertical-align: top;
+    width: 14px;
+    height: 14px;
+    background-position: -112px -112px;
+    line-height: 999em;
+    overflow: hidden
+}
+
+#whatAutologinTip {
+    z-index: 9;
+    width: 180px;
+    height: 36px;
+    background-color: #fffde4;
+    border: 1px #dfb86d solid;
+    left: 0px;
+    top: 16px;
+    text-align: left;
+    padding: 5px 10px;
+    line-height: 18px;
+    color: #dc9632;
+    display: none;
+    border-radius: 4px
+}
+
+.btn {
+    width: 110px;
+    height: 38px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: baseline;
+    line-height: 38px;
+    outline: 0;
+    background-color: transparent;
+    border-radius: 3px;
+}
+
+.btn-login {
+    background-position: 0 -208px;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 94, 21, .3)
+}
+
+.btn-login-hover {
+    background-position: 0 -256px;
+}
+
+.btn-login-active {
+    background-position: 0 -304px;
+    color: #b1dab9;
+}
+
+.btn-reg {
+    background-position: -117px -208px;
+    color: #5c7a5c;
+    float: right;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1)
+}
+
+.loginFormBtn .btn-reg-hover {
+    background-position: -117px -256px;
+    color: #279c3b
+}
+
+.loginFormBtn .btn-reg-active {
+    background-position: -117px -304px;
+    color: #5c7a5c
+}
+
+.btn-moblogin2 {
+    width: 202px;
+    height: 37px;
+    text-align: center;
+    font-size: 14px;
+    background-position: -396px -288px;
+    background-color: #fff;
+    margin-top: 30px;
+    float: none;
+    margin-left: 25px;
+}
+
+.loginFormConf {
+    height: 12px;
+    line-height: 12px;
+    margin-left: 25px;
+    margin-top: 15px;
+    clear: both;
+    width: 245px;
+    position: relative;
+    color: #848585;
+    z-index: 1;
+}
+
+.loginFormVer {
+    float: left;
+    width: 160px;
+}
+
+.loginFormService {
+    float: right;
+    text-align: right;
+}
+
+.loginFormVerList {
+    width: 140px;
+    position: absolute;
+    padding: 1px;
+    background: #fff;
+    border: 1px solid #b7c2c9;
+    top: -5px;
+    top: -4px;
+    left: 33px;
+    display: none;
+}
+
+.loginFormVerList li a {
+    height: 22px;
+    line-height: 22px;
+    width: 140px;
+    overflow: hidden;
+    color: #848585;
+    display: block;
+    text-indent: 22px;
+}
+
+.loginFormVerList li a:hover {
+    background-color: #eff5eb;
+}
+
+.loginFormVerList li a.verSelected {
+    color: #5aa869;
+    background-position: -250px -58px;
+    background-repeat: no-repeat;
+}
+
+/* ext */
+#extVerSelect, #extText, #extMobLogin, #extMobLogin2 {
+    display: none;
+}
+
+.ext {
+    width: 295px;
+    height: 64px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#extText {
+    margin: 15px 0 0 25px;
+    line-height: 12px;
+}
+
+#extText li {
+    background-position: -240px -123px;
+    background-repeat: no-repeat;
+    padding-left: 7px;
+    color: #9bacc6;
+    margin-bottom: 9px;
+}
+
+#extText li a {
+    color: #9eb89e;
+}
+
+#extText li a:hover {
+    color: #5aa869;
+}
+
+#extMobLogin {
+    margin: 15px 0 0 25px;
+}
+
+#extMobLogin li {
+    margin-bottom: 9px;
+    padding-left: 7px;
+    color: #848585;
+    height: 12px;
+    line-height: 12px;
+    background-position: -240px -107px;
+    background-repeat: no-repeat
+}
+
+#extMobLogin a {
+    color: #5c7a5c;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+#extMobLogin .ext-tt {
+    display: block;
+    width: 245px;
+    background-color: #39ad4c;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 2px;
+}
+
+#extVerSelect {
+    height: 66px;
+    line-height: 66px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+}
+
+#extVerSelect a {
+    color: #005590;
+    text-decoration: underline;
+}
+
+.setMobLoginInfo {
+    margin-left: 46px;
+    color: #848585;
+    margin-top: 10px;
+}
+
+/*.tab-2 .ext{height:76px;}
+.tab-2 .loginFormCheck{margin-top:10px;}
+.tab-2 .loginFormBtn{margin-top:10px;}*/
+/* footer */
+.footer {
+    height: 65px;
+    margin: 0 auto;
+}
+
+.footer-inner {
+    width: 1000px;
+    height: 63px;
+    overflow: visible;
+    margin: 0 auto;
+    color: #848585;
+    position: relative;
+}
+
+.footerNav {
+    top: 25px;
+    right: 300px;
+    text-align: center;
+}
+
+.footerNav a {
+    margin-left: 14px
+}
+
+.copyright {
+    margin-left: 22px
+}
+
+.noscriptLink {
+    text-decoration: underline;
+    color: #005590;
+    font-size: 14px;
+}
+
+/* mobtips */
+#mobtips {
+    height: 18px;
+    border: 1px solid #c6c6a8;
+    top: 29px;
+    left: 46px;
+    line-height: 18px;
+    background: #ffffe1;
+    padding-left: 6px;
+    padding-right: 20px;
+    display: none;
+    color: #565656;
+    zoom: 1;
+}
+
+#mobtips_arr {
+    width: 9px;
+    height: 9px;
+    background-position: -684px -72px;
+    top: -5px;
+    left: 15px;
+}
+
+#mobtips_close {
+    background-position: -715px -68px;
+    top: 2px;
+    width: 16px;
+    height: 14px;
+    right: 0px;
+}
+
+#mobtips em {
+    font-style: normal;
+    color: #328721;
+}
+
+#mobtips a {
+    text-decoration: underline;
+    color: #005590;
+}
+
+/* mask */
+.mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter: alpha(opacity = 30);
+    -moz-opacity: 0.3;
+    opacity: 0.3;
+    z-index: 998
+}
+
+/* 弹框 */
+.dialogbox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 687px;
+    left: 50%;
+    margin-left: -343px;
+    top: 50%;
+    margin-top: -152px;
+}
+
+.dialogbox .hd {
+    position: relative;
+    padding: 0 10px;
+    height: 27px;
+    line-height: 27px;
+    color: #fff;
+    background-repeat: repeat-x;
+    background-position: 0 -576px
+}
+
+.dialogbox .hd .rc {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 27px
+}
+
+.dialogbox .hd .rc-l {
+    left: 0;
+    background-position: -720px -36px
+}
+
+.dialogbox .hd .rc-r {
+    right: 0;
+    background-position: -722px -36px
+}
+
+.dialogbox .hd .btn-close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background-position: -716px 3px;
+    line-height: 9999px;
+    overflow: hidden;
+    font-size: 0;
+    margin-right: 0;
+}
+
+.dialogbox .bd {
+    border: 1px solid #6C92AD;
+    border-top: none;
+    background: #fff
+}
+
+.dialogbox iframe {
+    display: block
+}
+
+#phoneRegFrame {
+    width: 685px;
+    height: 315px
+}
+
+.enhttp {
+    width: 420px;
+    height: 270px;
+    position: absolute;
+    z-index: 999;
+    overflow: hidden;
+    top: 0;
+    left: 50%;
+    margin-left: -210px;
+    top: 50%;
+    margin-top: -135px;
+}
+
+.enhttp .topborder {
+    width: 418px;
+    height: 2px;
+    font-size: 1px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-position: 0 -108px;
+}
+
+.enhttp .bottomborder {
+    width: 418px;
+    height: 2px;
+    font-size: 1px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-position: 0 -110px;
+}
+
+.enhttp .ct {
+    width: 418px;
+    height: 266px;
+    background-position: 0 -134px;
+    background-color: #fff;
+    border-left: 1px solid #82aecd;
+    border-right: 1px solid #82aecd;
+    position: relative;
+    overflow: hidden;
+}
+
+.enhttp .ct .inner {
+    padding-top: 40px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.enhttp .ct .inner p {
+    font-size: 14px;
+}
+
+.enhttp .ct .inner .txt-tips {
+    color: #737373;
+    line-height: 30px;
+    width: 325px;
+    margin-left: 46px;
+    display: inline;
+}
+
+.enhttp .ct .inner .txt-normal {
+    line-height: 30px;
+    width: 325px;
+    margin: 10px 0 0 46px;
+}
+
+.enhttp .ct .inner .httplogin {
+    font-size: 14px;
+    height: 34px;
+    width: 120px;
+    display: block;
+    background-position: -432px -108px;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    background-color: #3486cc;
+}
+
+.enhttp .ct .inner .txt-line {
+    width: 325px;
+    margin-left: 46px;
+    background: #b6cad9;
+    height: 1px;
+    overflow: hidden;
+    font-size: 1px;
+    margin-top: 24px;
+}
+
+.enhttp .ct .inner .txt-advice {
+    line-height: 60px;
+    width: 325px;
+    color: #8d8d8d;
+    margin-left: 46px;
+}
+
+.enhttp .ct .inner .txt-advicelink {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.enhttp .cldenhttp {
+    height: 22px;
+    width: 22px;
+    overflow: hidden;
+    position: absolute;
+    right: 8px;
+    top: 6px;
+    background-position: 0 -112px;
+    text-indent: -9999px;
+}
+
+.enhttp .cldenhttp:hover {
+    background-position: -22px -112px;
+}
+
+.enhttp .enhttpbox {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+}
+
+.enhttp .httploginframe {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 2px;
+    z-index: 1;
+    left: 0;
+}
+
+.locationTestTitle {
+    width: 255px;
+    height: 26px;
+    line-height: 26px;
+    position: relative;
+    color: #555;
+    text-indent: 10px;
+    background-position: 0 -10px;
+    border-bottom: 1px solid #f1f3f5;
+}
+
+.locationTestTitle h4 {
+    margin: 0;
+    font-size: 12px;
+}
+
+.locationTestTitleClose {
+    height: 8px;
+    width: 8px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    right: 6px;
+    top: 7px;
+    background-position: -224px -112px
+}
+
+.locationTestTitleClose:hover {
+    background-position: -208px -112px
+}
+
+.locationTestEach {
+    display: inline-block;
+    width: 5em;
+    font-family: verdana;
+    color: #848585;
+}
+
+.locationTestList li {
+    padding: 2px;
+    float: left;
+    display: inline-block;
+}
+
+.locationTestList .servSelected {
+    background-position: -248px -50px;
+    background-repeat: no-repeat;
+}
+
+.locationTestList li a {
+    height: 38px;
+    width: 80px;
+    display: block;
+    line-height: 16px;
+    padding-top: 10px;
+    overflow: hidden;
+    text-align: center;
+    color: #000;
+}
+
+.locationTestList li a:hover {
+    background-color: #eef3f8;
+}
+
+#selectLocation {
+    text-align: center;
+}
+
+#locationTestCur {
+    width: 3em;
+}
+
+#selectLocationTipsDone {
+    display: none;
+}
+
+.locationTestBest {
+    display: none;
+    color: green;
+}
+
+.locationChoose {
+    text-decoration: underline;
+    color: #005590;
+}
+
+#themeArea {
+    width: 240px;
+    height: 80px;
+    position: absolute;
+    left: 90px;
+    top: 134px;
+}
+
+/* 主题控制栏 */
+.themeCtrl {
+    position: absolute;
+    right: 100px;
+    bottom: 12px;
+}
+
+.themeCtrl a {
+    float: left;
+    display: inline;
+}
+
+#musicLink,
+#prevTheme,
+#nextTheme {
+    width: 25px;
+    height: 25px;
+    margin-right: 7px;
+}
+
+#musicLink {
+    background-position: -161px -457px;
+}
+
+#musicLink:hover {
+    background-position: -161px -492px;
+}
+
+#prevTheme {
+    background-position: 0 -457px;
+}
+
+#prevTheme:hover {
+    background-position: 0 -492px;
+}
+
+#nextTheme {
+    background-position: -35px -457px;
+}
+
+#nextTheme:hover {
+    background-position: -35px -492px;
+}
+
+/* 首页评分 */
+#scoreIndex {
+    margin: 1px 10px 0 0;
+    width: 73px;
+    height: 24px;
+    background-position: -70px -457px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 24px;
+    text-align: center;
+    display: none;
+}
+
+#scoreIndex:hover {
+    background-position: -70px -492px;
+}
+
+#scoreIndexPop {
+    left: 50%;
+    top: 50%;
+    margin-left: -231px;
+    margin-top: -115px;
+    width: 462px;
+    position: absolute;
+    z-index: 999;
+    overflow: hidden;
+    display: none;
+    height: 229px;
+    background: #fff;
+}
+
+#scoreIndexPopIfm {
+    width: 462px;
+    height: 229px;
+}
+
+/**/
+#theme {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    background: none;
+}
+
+#theme.themeEffect {
+    background: #e7ebe9;
+}
+
+.ms {
+    color: #ed0e37;
+    width: 200px;
+    height: 30px;
+    margin-left: 50px;
+    text-align: center;
+    border: 0px solid #000;
+}
+
+#message ul {
+    list-style-type: none;
+}
+

@@ -1,0 +1,566 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: "微软雅黑","华文细黑","宋体","黑体";
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 90%;
+}
+
+/* form resets */
+input, textarea {
+    border: 0;
+}
+
+/* lets use a sensible box model
+       REFERENCE: http://paulirish.com/2012/box-sizing-border-box-ftw */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; /* iOS4 */
+    box-sizing: border-box;
+    *behavior: url(/assets/javascript/polyfills/boxsizing.htc); /* hack for IE7 */
+}
+
+/*
+	=vendor_enhancements --------------------------------------------------------------------------------------------------
+	NOTE: Fix various browser issues, and switch some vendor specific nicities on/off
+	----------------------------------------------------------------------------------------------------------------------- */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility; /* using kerning and ligatures http://www.aestheticallyloyal.com/public/optimize-legibility/ */
+}
+
+/* fix webkit to stop it rendering text too thickly in cases where there is light text on dark backgrounds
+       http://orderedlist.com/our-writing/blog/articles/webkit-font-smoothing/ */
+#food {
+    -webkit-font-smoothing: antialiased;
+}
+
+a:link {
+    -webkit-tap-highlight-color: #999;
+}
+
+/* Don't collapse these into one ruleset. When a browser doesn't recognise a selector it discards the whole ruleset.
+       By using vendor selectors in one ruleset you guarentee nothing will be applied */
+::-webkit-selection {
+    background-color: #999;
+    color: #fff;
+}
+
+::-moz-selection {
+    background-color: #999;
+    color: #fff;
+}
+
+::selection {
+    background-color: #999;
+    color: #fff;
+}
+
+::-webkit-input-placeholder {
+}
+
+input:-moz-placeholder {
+}
+
+/* kill input=search default styling on webkit
+    input[type=search] { -webkit-appearance : none; }
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-cancel-button {
+        display: none; } */
+
+input, textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+    =typography -----------------------------------------------------------------------------------------------------------
+    NOTE:       I've found that margin-top applied to everything is a pain - it often messes up layout and requires jumping
+                through hoops to fix, so I've stopped doing this as a default and now add top margin manually when required.
+    REFERENCE:  Based on http://alistapart.com/articles/settingtypeontheweb/
+                         http://24ways.org/2006/compose-to-a-vertical-rhythm/
+    ----------------------------------------------------------------------------------------------------------------------- */
+
+/* custom fonts
+     * The following fonts included are copyrighted by the vendor listed below.
+     * @vendor:     Anton Koovit
+     * @vendorurl:  http://anton.korkork.com/
+     * @licenseurl: http://www.fontsquirrel.com/license/arvo */
+
+@font-face {
+    font-family: 'RoughEgyptienne';
+    src: url('../fonts/RoughEgyptienne.eot');
+    src: url('../fonts/RoughEgyptienne.eot?#iefix') format('embedded-opentype'), url('../fonts/RoughEgyptienne.woff') format('woff'), url('../fonts/RoughEgyptienne.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DancingScriptOTRegular';
+    src: url('../fonts/DancingScript-Regular-webfont.eot');
+    src: url('../fonts/DancingScript-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/DancingScript-Regular-webfont.woff') format('woff'), url('../fonts/DancingScript-Regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, input, select, textarea {
+    font-size: 16px, line-height: 18px;
+    font: 100%/1.75 Georgia, "Times New Roman", serif;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* em fallback */
+    margin-top: 1.375em;
+    margin-bottom: 1.375em;
+    margin-top: 1.375rem;
+    margin-bottom: 1.375rem;
+    font-family: RoughEgyptienne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    /* http://blogs.msdn.com/b/ie/archive/2012/01/09/css-corner-using-the-whole-font.aspx */
+    -moz-font-feature-settings: "liga=1, dlig=1";
+    -ms-font-feature-settings: "liga", "dlig";
+    -webkit-font-feature-settings: "liga", "dlig";
+    -o-font-feature-settings: "liga", "dlig";
+    font-feature-settings: "liga", "dlig";
+}
+
+h1 {
+    /* em fallback */
+    font-size: 2em;
+    font-size: 2rem;
+    line-height: 1.375;
+}
+
+h2 {
+    /* em fallback */
+    font-size: 1.75em;
+    font-size: 1.75rem;
+    line-height: 1.5714285714;
+}
+
+h3, h4, h5, h6 {
+    /* em fallback */
+    font-size: 1.375em;
+    font-size: 1.375rem;
+    line-height: 1;
+}
+
+p, ul, blockquote {
+    /* em fallback */
+    margin-bottom: 1.375em;
+    margin-bottom: 1.375rem;
+}
+
+/*
+    =base_rules -----------------------------------------------------------------------------------------------------------
+    NOTE:  This section styles "default" elements, that is, how a <p> or <em> etc look by default, without
+           any page or class specific over-rides.
+    ----------------------------------------------------------------------------------------------------------------------- */
+
+/*
+    =html =body */
+html {
+
+    color: #000;
+    background-image: url("../images/body_bg.png");
+    background-repeat:repeat;
+}
+
+body {
+    margin: 0 auto;
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 50px;
+    border-left: 1px solid #e0e0e0;
+    border-right:1px solid #e0e0e0;
+    
+}
+
+/*
+	=q */
+q,
+blockquote > p:first-child,
+blockquote > p:last-child {
+    quotes: '鈥� ' 鈥 � '鈥� ' 鈥 �;
+}
+
+/* open then close, then new nesting level */
+q:before,
+blockquote > p:first-child:before {
+    content: open-quote;
+}
+
+q:after,
+blockquote > p:last-of-type:after {
+    content: close-quote;
+}
+
+/*
+	=blockquote */
+blockquote {
+    padding: 1.375em 1em;
+    border-left: .5em solid #999;
+    background: #fff;
+}
+
+blockquote footer {
+    display: block;
+    margin-top: 1.375em;
+    padding-top: 1.3125em;
+    border-top: 0.0625em dotted #999;
+}
+
+/*
+	=sup */
+sup {
+    vertical-align: top;
+    font-size: .75em;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/*
+	=sub */
+sub {
+    vertical-align: bottom;
+    font-size: .75em;
+}
+
+/*
+	=code */
+code {
+    font: .85em/1 Courier, monospace;
+    color: #006;
+}
+
+/*
+    =a */
+a {
+    -webkit-transition: box-shadow linear 0.2s, background-color linear 0.2s;
+    -moz-transition: box-shadow linear 0.2s, background-color linear 0.2s;
+    -o-transition: box-shadow linear 0.2s, background-color linear 0.2s;
+    -ms-transition: box-shadow linear 0.2s, background-color linear 0.2s;
+    transition: box-shadow linear 0.2s, background-color linear 0.2s;
+}
+
+a:link {
+    color: #060f89;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #6a065f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 0;
+}
+
+a:active {
+}
+
+/* :target   { background-color : #ff6; } */
+
+/*
+=img */
+img {
+    max-width: 100%;
+}
+
+#target_hilight {
+    position: absolute;
+}
+
+a img {
+    margin: 0;
+}
+
+/*
+	=table */
+tbody tr:nth-child(2n+1) {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+/*
+	=forms */
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+textarea {
+    background-repeat: no-repeat;
+    background-position: left top;
+    border: 1px solid #909993;
+
+
+}
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"]
+{
+  height: 30px;
+
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    background-repeat: no-repeat;
+    background-position: left top;
+    border: 1px solid #909993;
+
+}
+
+label.focus span {
+    color: #000;
+}
+
+input[type="button"], input[type="reset"] {
+    /*border-radius: 4px;*/
+    BACKGROUND: #6699FF;
+    border: 1 solid #6699FF;
+    COLOR: #ffffff;
+    FONT-SIZE: 16px;
+    FONT-STYLE: normal;
+    FONT-VARIANT: normal;
+    FONT-WEIGHT: normal;
+    HEIGHT: 30px;
+    LINE-HEIGHT: normal;
+}
+
+textarea {
+    width: 95%;
+}
+
+input[type="date"] {
+    border: 1px solid #909993;
+    height: 30px;
+}
+
+select {
+    position: relative;
+    left: -2px;
+    top: -2px;
+    font-size: 16px;
+    line-height: 25px;
+    border: 1px solid #909993;
+    color: #000;
+    height: 30px;
+}
+
+/* =div */
+
+/* =span */
+label span {
+    display: block;
+}
+
+label.boolean span {
+    display: inline;
+}
+
+/*
+  =display-classes ---------------------------------------------------------------------------------------------------------
+  NOTE: These are to be avoided if at all possible, it is rare they are acceptable. Do not use them for page layout!
+  ----------------------------------------------------------------------------------------------------------------------- */
+.dc_left {
+    float: left;
+    margin-right: 1em;
+}
+
+.dc_right {
+    float: right;
+    margin-left: 1em;
+}
+
+.dc_small {
+    width: 20%;
+}
+
+.dc_medium {
+    width: 40%;
+}
+
+.dc_large {
+    width: 60%;
+}
+
+/*
+  =modules --------------------------------------------------------------------------------------------------------------
+  NOTE: Modules are discrete sections of data that may be used on any page, e.g., "Latest News"
+  ----------------------------------------------------------------------------------------------------------------------- */
+
+/*
+    =website header */
+#site_context {
+    ` margin-bottom: 0;
+}
+
+#site_context .title {
+    margin: 0;
+}
+
+.banner_text {
+    font-family: RoughEgyptienne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 40px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .25), 2px 2px 0 rgba(0, 0, 0, .25), 3px 3px 0 rgba(255, 255, 255, .25);
+}
+
+/*
+    =website footer */
+#content {
+    margin-top: 2em;
+    padding-top: 1.5em;
+    border-top: 1px solid #fff;
+}
+
+/*
+    =popup */
+.popup {
+    margin-bottom: 1.375em;
+    margin-bottom: 1.375rem;
+}
+
+.popup > a,
+.popup img {
+    display: block;
+}
+
+.popup.captioned {
+    padding: .5em;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.popup .caption {
+    font-size: .85em;
+    margin: .5em 0 0;
+}
+
+/* the game
+relies entirely on JS, btw */
+
+#game {
+    position: relative;
+    margin: 8em 0;
+}
+
+img.q_1, img.q_2, img.q_3 {
+    position: absolute;
+}
+
+/* display only 1st question by default */
+img.q_2, img.q_3 {
+    display: none;
+}
+
+/* basic controls */
+.controls.q2, .controls.q3 {
+    display: none;
+}
+
+.controls span {
+    position: absolute;
+    top: 82%;
+    left: 10%;
+    display: block;
+    width: 20%;
+    height: 14%;
+    text-indent: -999em;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.controls span:hover {
+    cursor: pointer;
+}
+
+.controls span.a_2 {
+    left: 35%;
+}
+
+.controls span.a_3 {
+    left: 60%;
+    width: 30%;
+}
+
+#game .score {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    font-family: RoughEgyptienne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 35px;
+    line-height: 42px;
+    color: #EBEEEF;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25), 2px 2px 0 rgba(0, 0, 0, 0.25), 3px 3px 0 rgba(255, 255, 255, 0.25);
+    text-align: center;
+    z-index: 40;
+}
+
+#game .score b {
+    font-size: 3em;
+    line-height: .6em;
+}
+
+#game .score span {
+    cursor: pointer;
+}
+
+/*
+=layout ---------------------------------------------------------------------------------------------------------------
+NOTE:       How modules are laid out on specific pages
+----------------------------------------------------------------------------------------------------------------------- */
+
+/*
+  =page_styles ----------------------------------------------------------------------------------------------------------
+  NOTE:       How modules are laid out on specific pages
+  ----------------------------------------------------------------------------------------------------------------------- */
+#food h2 {
+    font-family: "DancingScriptOTRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: none;
+    font-size: 2em;
+}
+						
